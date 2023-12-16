@@ -1,0 +1,11 @@
+html {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(32, 148, 32),
+    rgb(3, 103, 3)
+  );
+}
+h1 {
+  text-align: center;
+  color: white;
+}
