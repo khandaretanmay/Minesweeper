@@ -1,11 +1,42 @@
 body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to top left, rgb(32, 148, 32), rgb(3, 103, 3));
+  height: auto;
+  display: grid;
+  text-align: center;
+  vertical-align: middle;
+  /* background: linear-gradient(to top left, #28b487, #7dd56f); */
+}
+.play {
+  display: inline-block;
 }
 h1 {
+  margin-bottom: 3rem;
+}
+.board {
+  display: flex;
+}
+.cell {
+  height: 35px;
+  width: 35px;
+  background-color: lightgray;
+  border: 1px solid black;
   text-align: center;
-  color: white;
+  font-size: x-large;
+  user-select: none;
+}
+img {
+  vertical-align: 0;
+}
+.cell--marked {
+  background-image: none;
+  background-color: lightcoral;
+}
+.cell--opened {
+  /* background-color: beige; */
+  background-image: linear-gradient(to top left, beige, rgb(228, 228, 214));
+}
+.cell--wrong {
+  background-color: red;
+}
+.cell--final {
+  background-image: linear-gradient(to top left, #28b487, #7dd56f);
 }
